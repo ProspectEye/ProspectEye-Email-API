@@ -21,6 +21,12 @@ Requirements
 In order to connect your email marketing solution to ProspectEye you need a compatable webservice and the capacity to add data
 in the links generated i the email.
 
+The webservice must have the following feature:
+
+fetchDataBasedOnId(id)
+
+returns ``String``
+
 Example
 ---------------------
 A link in the email can look like this: http://www.example.com/showcase.php?pedata=M1237632
