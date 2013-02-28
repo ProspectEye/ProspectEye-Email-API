@@ -25,3 +25,22 @@ Example
 ---------------------
 A link in the email can look like this: http://www.example.com/showcase.php?pedata=M1237632
 
+The data that the email marketing solution should add to every url in the emails is the parametr pedata=M1237632. pedata=M
+is the identifier for your solution where M could be any letter. ProspectEye will reserv a letter for you. The rest is an
+id (1237632) that is an unique identifier for the information about the email reviever. The information should be collectable
+via a webservice where the url-id is the identifier to fetch the data.
+
+The data could be represented as a string
+
+``
+email=firstname.lastname@example.com|subject=example email|campaign=example campaign
+``
+
+The follow procedure is praxis:
+
+- Email is sent from Email Marketing solution
+- Every link has the added parameter pedata with and identifier
+- A person clicks on the link and the pedata is sent to ProspectEye
+- ProspectEye fetches the data via the email marketing solutions webservice with the identifier
+- ProspectEye shows this data to enhance the lead
+
