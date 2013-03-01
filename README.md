@@ -23,24 +23,44 @@ in the links generated i the email.
 
 The webservice must have the following feature:
 
-fetchDataBasedOnId(id)
+``fetchDataBasedOnId(id)``
 
-returns ``String``
+returns ``String``,``XML`` or ``JSON`` of the information based on the ``id``
+
+Apply for partnership
+---------------------
+If you have the requirements and would like to connect ProspectEye with you Email marketing solution. Send an email to support@prospecteye.com
+with answers to the following questions:
+
+- Existing common clients
+- Market reach (global or country specific), your number of existing clients
+- Your service cost (Yearly basis)
+- Yearly revenue
 
 Example
 ---------------------
 A link in the email can look like this: http://www.example.com/showcase.php?pedata=M1237632
 
-The data that the email marketing solution should add to every url in the emails is the parametr pedata=M1237632. pedata=M
+The data that the email marketing solution should add to every url in the emails is the parameter pedata=M1237632. pedata=M
 is the identifier for your solution where M could be any letter. ProspectEye will reserv a letter for you. The rest is an
 id (1237632) that is an unique identifier for the information about the email reviever. The information should be collectable
 via a webservice where the url-id is the identifier to fetch the data.
 
-The data could be represented as a string
+The fetchable data could be represented as a string
 
 ``
 email=firstname.lastname@example.com|subject=example email|campaign=example campaign
 ``
+
+or JSON
+
+```
+{
+  email: 'firstname.lastname@example.com',
+  subject: 'example email',
+  campaign: 'example campaign'
+}
+```
 
 The follow procedure is praxis:
 
