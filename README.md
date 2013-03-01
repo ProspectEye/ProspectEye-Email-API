@@ -19,9 +19,9 @@ This is a very powerful combination in order to generate hot leads based on emai
 Requirements
 ---------------------
 In order to connect your Email Marketing Solution to ProspectEye you need a compatible webservice and the capacity to add data
-in the links generated i the email.
+in the links generated in the email.
 
-The webservice must have the following feature:
+The webservice must have the following kind of feature:
 
 ``fetchDataBasedOnId(id)``
 
@@ -29,7 +29,7 @@ returns ``String``,``XML`` or ``JSON`` of the information based on the ``id``
 
 Apply for partnership
 ---------------------
-If you are all set on the requirements and would like to connect ProspectEye to you Email Marketing Solution, send us an application email on support@prospecteye.com
+If you are all set on the requirements and would like to connect ProspectEye to your Email Marketing Solution, send us an application email on support@prospecteye.com
 with answers to the following questions:
 
 - Existing common clients and your number of existing clients
