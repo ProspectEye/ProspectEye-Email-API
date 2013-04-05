@@ -1,4 +1,4 @@
-ProspectEye-Email-API
+ProspectEye Email API
 =====================
 
 Description
@@ -39,9 +39,9 @@ with answers to the following questions:
 
 Example on integration setup
 ---------------------
-A link in the email can look like this: http://www.example.com/showcase.php?pedata=M1237632
+A link in the email can look like this: http://www.example.com/showcase.php?pe_data=M1237632
 
-The data that your Email Marketing Solution should add to every url in the emails is the parameter pedata=M1237632. pedata=M
+The data that your Email Marketing Solution should add to every url in the emails is the parameter pe_data=M1237632. pe_data=M
 is the identifier for your solution where M could be any letter. ProspectEye will reserve a letter for you. The rest is an
 id (1237632) that is an unique identifier for the information about the email recipient. The information should be collectable
 via a webservice where the url-id is the identifier to fetch the data.
@@ -65,8 +65,8 @@ or JSON
 The follow procedure is praxis:
 
 - Email is sent from your Email Marketing Solution
-- Every link has the added parameter pedata with an identifier
-- A recipient clicks on a link in the email and the pedata is sent to ProspectEye
+- Every link has the added parameter pe_data with an identifier
+- A recipient clicks on a link in the email and the pe_data is sent to ProspectEye
 - ProspectEye fetches the data via the Email Marketing Solution webservice with the identifier
 - ProspectEye displays the data to enhance the lead
 
